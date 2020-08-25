@@ -1,0 +1,188 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Location:"
+        android:textSize="25sp"
+        android:layout_marginTop="3dp"     
+        android:textColor="@color/Black"
+    />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LocationRadioGrp"
+
+    >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Address"
+            android:layout_marginTop="3dp"    
+            android:textSize="20sp"    
+            android:drawableStart="@drawable/ic_home"
+            android:drawablePadding="5dp"
+        />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+                        android:textSize="20sp"    
+    
+            android:layout_marginTop="3dp" 
+        />
+    </RadioGroup>
+    <EditText
+        android:id="@+id/otherLocationEditText"    
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Location Address"
+        android:textSize="20sp"    
+        android:layout_marginTop="3dp"     
+        android:textColor="@color/Black"    
+        android:visibility="invisible"
+    />
+    
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ItemsCheckoutRecyclerView"
+    />
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Total"
+            android:layout_weight="70"
+            android:textSize="23sp"
+        />
+        <TextView
+            android:id="@+id/checkoutListTPTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="price"
+            android:layout_weight="30"   
+            android:layout_marginEnd="5dp"    
+            android:gravity="end"    
+            android:textSize="23sp"
+        />
+    </LinearLayout>
+        <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="VAT(14%)"
+            android:layout_weight="70"
+            android:textSize="23sp"
+        />
+        <TextView
+            android:id="@+id/checkoutListTPTTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="price"
+            android:layout_weight="30"   
+            android:gravity="end"
+            android:layout_marginEnd="5dp"    
+            android:textSize="23sp"
+        />
+    </LinearLayout>
+        <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Delivery"
+            android:layout_weight="70"
+            android:textSize="20sp"
+        />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="10"
+            android:layout_weight="30"    
+            android:gravity="end"    
+            android:layout_marginEnd="5dp"    
+            android:textSize="20sp"
+        />
+    </LinearLayout>
+
+        <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Total After Taxes"
+            android:layout_weight="70"
+            android:textSize="23sp"
+        />
+        <TextView
+            android:id="@+id/checkoutListTPATTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="price"
+            android:layout_weight="30"    
+            android:gravity="end"    
+            android:layout_marginEnd="5dp"    
+            android:textSize="23sp"
+        />
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+     >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Payment Method:"
+            android:textSize="25sp"
+            android:layout_marginTop="8dp"    
+            android:textStyle="bold"    
+            android:textColor="@color/Black"
+            android:layout_weight="60"
+        />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:id="@+id/payMethSpinner"
+        />
+
+    </LinearLayout>
+    
+</LinearLayout>
+   
+    <Button
+        android:id="@+id/ConfirmPurchaseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_alignParentBottom="true"
+    />
+
+</RelativeLayout>

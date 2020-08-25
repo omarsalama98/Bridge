@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+       android:layout_weight="60" 
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"     
+       android:orientation="horizontal"
+       android:gravity="bottom"
+       android:layout_marginEnd="10dp"
+     >
+        <TextView
+            android:id="@+id/checkoutListItemNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textColor="@color/Black"
+            android:textSize="22sp"
+         />
+        <TextView
+            android:id="@+id/checkoutListItemPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+        />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+       android:layout_weight="40" 
+       android:layout_width="0dp"
+       android:layout_height="match_parent"     
+       android:orientation="horizontal"
+       android:gravity="bottom" 
+     >
+        <TextView
+            android:id="@+id/checkoutListItemQuantityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textSize="20sp"
+         />
+        <TextView
+            android:id="@+id/checkoutListItemTotPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/Black"
+            android:textSize="22sp"
+        />
+        
+    </RelativeLayout>
+    
+     
+</LinearLayout>

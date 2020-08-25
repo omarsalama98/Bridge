@@ -1,0 +1,100 @@
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate Your Order"
+        android:textSize="22sp"
+        android:textColor="@color/Black"
+        android:textStyle="italic"
+    />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:numStars="5"
+        android:longClickable="true"
+        android:contextClickable="true"    
+        android:stepSize="1.0"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:id="@+id/orderReviewRating"
+    />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate The Store"
+        android:textSize="22sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/Black"
+        android:textStyle="italic"
+    />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:id="@+id/storeReviewRating"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:hint="Review Details"
+        android:id="@+id/storeReviewDetails"
+    />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate The Courier"
+        android:textSize="22sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/Black"
+        android:textStyle="italic"
+    />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:longClickable="true"
+        android:id="@+id/courierReviewRating"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:hint="Review Details"
+        android:id="@+id/courierReviewDetails"
+    />
+    
+</LinearLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Submit Review"
+    android:background="@drawable/curvedbutton"
+    android:layout_alignParentBottom="true"   
+    android:id="@+id/submitReviewBtn"    
+    />
+</RelativeLayout>

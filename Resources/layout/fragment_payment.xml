@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding = "10dp"
+        android:visibility="visible"
+        android:id="@+id/UserCreditCardView"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Credit Card: "
+            android:textSize="22sp"
+            android:textColor="@color/Black"
+            android:id="@+id/userCreditCardNumTV"
+            
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="434"
+            android:textSize="22sp"
+            android:textColor="@color/Black"
+            android:id="@+id/userCreditCardNumFirstDigitsTV"
+            
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9870960050983450"
+            android:textSize="20sp"
+            android:textColor="@color/Black"
+            android:password="true"
+        />
+
+    </LinearLayout>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Credit Cards Registered"
+            android:textSize="20sp"
+            android:id="@+id/noRegisteredCardsTV"
+            android:textColor="@color/red"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+        />
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            android:id="@+id/addCreditCardFB"
+            android:visibility="invisible"
+            
+    />
+    
+    
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2c3e50</color>
+    <color name="colorPrimaryDark">#1B3147</color>
+    <color name="colorAccent">#3498db</color>
+    <color name="Drawer_Background">#E3F2F0</color>
+    <color name="White">#ffffff</color>
+    <color name="Black">#000000</color>
+    <color name="Yellow">#FFEB7E</color>
+    <color name="DarkYellow">#FFEB13</color>
+    <color name="backgrnd">#83deca</color>
+    <color name="red">#ff0000</color>
+    <color name="DrakRed">#7f0000</color>
+    <color name="AddtoCartBtn">#2363F2</color>
+    <color name="AddtoCartBtnEdges">#3498db</color>
+    <color name="Blue">#3498fb</color>
+</resources>

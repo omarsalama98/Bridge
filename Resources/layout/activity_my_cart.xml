@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <android.support.v7.widget.RecyclerView  
+        android:id="@+id/myCartItemsRecyclerView"  
+        android:scrollbars="vertical"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"/> 
+        
+        <android.support.v7.widget.RecyclerView  
+        android:id="@+id/myCartOffersRecyclerView"  
+        android:scrollbars="vertical"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"/>  
+    </LinearLayout>
+  
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/White"
+        
+    >
+        <TextView
+            android:id="@+id/proceedCheckoutTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed To Checkout"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/ic_arrow_forward"
+            android:textColor="@color/Black"
+        />
+
+    </RelativeLayout>
+
+</RelativeLayout>

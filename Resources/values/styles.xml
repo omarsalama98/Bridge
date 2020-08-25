@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+  <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="windowNoTitle">true</item>  
+        <item name="windowActionBar">false</item>  
+        <item name="colorPrimary">#16A085</item>  
+        <item name="colorPrimaryDark">#1976D2</item>  
+        <item name="colorAccent">#FF4081</item>  
+        <item name="drawerArrowStyle">@style/myDrawerArrowStyle</item>
+  
+  </style>
+  
+  
+<style name="myDrawerArrowStyle" parent ="Widget.AppCompat.DrawerArrowToggle">
+  
+  <item name="color">#f5f5f5</item>
+  <item name="spinBars">true</item>
+       
+</style>
+</resources>

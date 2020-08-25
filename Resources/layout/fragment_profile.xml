@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:id="@+id/User_Name_TextView"
+        android:drawableStart="@drawable/ic_person"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/Email_TextView"
+        android:drawableStart="@drawable/ic_mail"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+    />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:id="@+id/Phone_Num_TextView"
+        android:drawableStart="@drawable/ic_smartphone"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"        
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_margin="10dp"
+        android:id="@+id/EditProfileBtn"
+    />
+
+</LinearLayout>

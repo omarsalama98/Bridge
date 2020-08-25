@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"    
+    >
+ <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:orientation="horizontal"
+    >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="User Name:"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="bottom"
+        />
+        <EditText
+        android:id="@+id/userNameTextId"
+        android:layout_width="0dp"
+        android:layout_weight="70"        
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Enter User Name"/>
+    </LinearLayout>
+
+    
+     <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:orientation="horizontal"
+    >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Password:"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="bottom"
+        />
+
+        <EditText
+            android:id="@+id/passwordTextId"
+            android:layout_width="0dp"
+            android:layout_weight="70"   
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:password="true"    
+            android:layout_marginBottom="20dp"
+            android:hint="Enter Password"/>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/curvedbutton"
+        android:text="Sign In"/>
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wrong User Name or Password Try Again!"
+        android:textSize="17sp"
+        android:textColor="#ff0000"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textStyle="italic"
+        android:textSize="20sp"/>
+
+
+
+</LinearLayout>
+</RelativeLayout>
